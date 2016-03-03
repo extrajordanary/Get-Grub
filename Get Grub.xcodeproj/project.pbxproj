@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D052D4E01C88FCD10073737C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4DF1C88FCD10073737C /* AppDelegate.swift */; };
+		D052D4E21C88FCD10073737C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4E11C88FCD10073737C /* ViewController.swift */; };
+		D052D4E51C88FCD10073737C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D052D4E31C88FCD10073737C /* Main.storyboard */; };
+		D052D4E71C88FCD10073737C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D052D4E61C88FCD10073737C /* Assets.xcassets */; };
+		D052D4EA1C88FCD10073737C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D052D4E81C88FCD10073737C /* LaunchScreen.storyboard */; };
+		D052D4F51C88FCD10073737C /* Get_GrubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4F41C88FCD10073737C /* Get_GrubTests.swift */; };
+		D052D5001C88FCD10073737C /* Get_GrubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4FF1C88FCD10073737C /* Get_GrubUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D052D4F11C88FCD10073737C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D052D4D41C88FCD10073737C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D052D4DB1C88FCD10073737C;
+			remoteInfo = "Get Grub";
+		};
+		D052D4FC1C88FCD10073737C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D052D4D41C88FCD10073737C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D052D4DB1C88FCD10073737C;
+			remoteInfo = "Get Grub";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D052D4DC1C88FCD10073737C /* Get Grub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Grub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D052D4DF1C88FCD10073737C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D052D4E11C88FCD10073737C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D052D4E41C88FCD10073737C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D052D4E61C88FCD10073737C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D052D4E91C88FCD10073737C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D052D4EB1C88FCD10073737C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D052D4F01C88FCD10073737C /* Get GrubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Get GrubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D052D4F41C88FCD10073737C /* Get_GrubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_GrubTests.swift; sourceTree = "<group>"; };
+		D052D4F61C88FCD10073737C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D052D4FB1C88FCD10073737C /* Get GrubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Get GrubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D052D4FF1C88FCD10073737C /* Get_GrubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_GrubUITests.swift; sourceTree = "<group>"; };
+		D052D5011C88FCD10073737C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D052D4D91C88FCD10073737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4ED1C88FCD10073737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4F81C88FCD10073737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D052D4D31C88FCD10073737C = {
+			isa = PBXGroup;
+			children = (
+				D052D4DE1C88FCD10073737C /* Get Grub */,
+				D052D4F31C88FCD10073737C /* Get GrubTests */,
+				D052D4FE1C88FCD10073737C /* Get GrubUITests */,
+				D052D4DD1C88FCD10073737C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D052D4DD1C88FCD10073737C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D052D4DC1C88FCD10073737C /* Get Grub.app */,
+				D052D4F01C88FCD10073737C /* Get GrubTests.xctest */,
+				D052D4FB1C88FCD10073737C /* Get GrubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D052D4DE1C88FCD10073737C /* Get Grub */ = {
+			isa = PBXGroup;
+			children = (
+				D052D4DF1C88FCD10073737C /* AppDelegate.swift */,
+				D052D4E11C88FCD10073737C /* ViewController.swift */,
+				D052D4E31C88FCD10073737C /* Main.storyboard */,
+				D052D4E61C88FCD10073737C /* Assets.xcassets */,
+				D052D4E81C88FCD10073737C /* LaunchScreen.storyboard */,
+				D052D4EB1C88FCD10073737C /* Info.plist */,
+			);
+			path = "Get Grub";
+			sourceTree = "<group>";
+		};
+		D052D4F31C88FCD10073737C /* Get GrubTests */ = {
+			isa = PBXGroup;
+			children = (
+				D052D4F41C88FCD10073737C /* Get_GrubTests.swift */,
+				D052D4F61C88FCD10073737C /* Info.plist */,
+			);
+			path = "Get GrubTests";
+			sourceTree = "<group>";
+		};
+		D052D4FE1C88FCD10073737C /* Get GrubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D052D4FF1C88FCD10073737C /* Get_GrubUITests.swift */,
+				D052D5011C88FCD10073737C /* Info.plist */,
+			);
+			path = "Get GrubUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D052D4DB1C88FCD10073737C /* Get Grub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D052D5041C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get Grub" */;
+			buildPhases = (
+				D052D4D81C88FCD10073737C /* Sources */,
+				D052D4D91C88FCD10073737C /* Frameworks */,
+				D052D4DA1C88FCD10073737C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Get Grub";
+			productName = "Get Grub";
+			productReference = D052D4DC1C88FCD10073737C /* Get Grub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D052D4EF1C88FCD10073737C /* Get GrubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D052D5071C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubTests" */;
+			buildPhases = (
+				D052D4EC1C88FCD10073737C /* Sources */,
+				D052D4ED1C88FCD10073737C /* Frameworks */,
+				D052D4EE1C88FCD10073737C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D052D4F21C88FCD10073737C /* PBXTargetDependency */,
+			);
+			name = "Get GrubTests";
+			productName = "Get GrubTests";
+			productReference = D052D4F01C88FCD10073737C /* Get GrubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D052D4FA1C88FCD10073737C /* Get GrubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D052D50A1C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubUITests" */;
+			buildPhases = (
+				D052D4F71C88FCD10073737C /* Sources */,
+				D052D4F81C88FCD10073737C /* Frameworks */,
+				D052D4F91C88FCD10073737C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D052D4FD1C88FCD10073737C /* PBXTargetDependency */,
+			);
+			name = "Get GrubUITests";
+			productName = "Get GrubUITests";
+			productReference = D052D4FB1C88FCD10073737C /* Get GrubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D052D4D41C88FCD10073737C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Justin Matsnev";
+				TargetAttributes = {
+					D052D4DB1C88FCD10073737C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D052D4EF1C88FCD10073737C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D052D4DB1C88FCD10073737C;
+					};
+					D052D4FA1C88FCD10073737C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D052D4DB1C88FCD10073737C;
+					};
+				};
+			};
+			buildConfigurationList = D052D4D71C88FCD10073737C /* Build configuration list for PBXProject "Get Grub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D052D4D31C88FCD10073737C;
+			productRefGroup = D052D4DD1C88FCD10073737C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D052D4DB1C88FCD10073737C /* Get Grub */,
+				D052D4EF1C88FCD10073737C /* Get GrubTests */,
+				D052D4FA1C88FCD10073737C /* Get GrubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D052D4DA1C88FCD10073737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D052D4EA1C88FCD10073737C /* LaunchScreen.storyboard in Resources */,
+				D052D4E71C88FCD10073737C /* Assets.xcassets in Resources */,
+				D052D4E51C88FCD10073737C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4EE1C88FCD10073737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4F91C88FCD10073737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D052D4D81C88FCD10073737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D052D4E21C88FCD10073737C /* ViewController.swift in Sources */,
+				D052D4E01C88FCD10073737C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4EC1C88FCD10073737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D052D4F51C88FCD10073737C /* Get_GrubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D052D4F71C88FCD10073737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D052D5001C88FCD10073737C /* Get_GrubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D052D4F21C88FCD10073737C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D052D4DB1C88FCD10073737C /* Get Grub */;
+			targetProxy = D052D4F11C88FCD10073737C /* PBXContainerItemProxy */;
+		};
+		D052D4FD1C88FCD10073737C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D052D4DB1C88FCD10073737C /* Get Grub */;
+			targetProxy = D052D4FC1C88FCD10073737C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D052D4E31C88FCD10073737C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D052D4E41C88FCD10073737C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D052D4E81C88FCD10073737C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D052D4E91C88FCD10073737C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D052D5021C88FCD10073737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D052D5031C88FCD10073737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D052D5051C88FCD10073737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Get Grub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-Grub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D052D5061C88FCD10073737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Get Grub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-Grub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D052D5081C88FCD10073737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Get GrubTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-GrubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Get Grub.app/Get Grub";
+			};
+			name = Debug;
+		};
+		D052D5091C88FCD10073737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Get GrubTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-GrubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Get Grub.app/Get Grub";
+			};
+			name = Release;
+		};
+		D052D50B1C88FCD10073737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Get GrubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-GrubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Get Grub";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D052D50C1C88FCD10073737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Get GrubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinmatsnev.Get-GrubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Get Grub";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D052D4D71C88FCD10073737C /* Build configuration list for PBXProject "Get Grub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D052D5021C88FCD10073737C /* Debug */,
+				D052D5031C88FCD10073737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D052D5041C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get Grub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D052D5051C88FCD10073737C /* Debug */,
+				D052D5061C88FCD10073737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D052D5071C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D052D5081C88FCD10073737C /* Debug */,
+				D052D5091C88FCD10073737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D052D50A1C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D052D50B1C88FCD10073737C /* Debug */,
+				D052D50C1C88FCD10073737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D052D4D41C88FCD10073737C /* Project object */;
+}
