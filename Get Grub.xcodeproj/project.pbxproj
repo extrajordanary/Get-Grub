@@ -14,6 +14,7 @@
 		D052D4EA1C88FCD10073737C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D052D4E81C88FCD10073737C /* LaunchScreen.storyboard */; };
 		D052D4F51C88FCD10073737C /* Get_GrubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4F41C88FCD10073737C /* Get_GrubTests.swift */; };
 		D052D5001C88FCD10073737C /* Get_GrubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052D4FF1C88FCD10073737C /* Get_GrubUITests.swift */; };
+		F750BD5FF4BF5D3B73484882 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A199C1909D0FCAF6C702B692 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75C118DE1DC9C2893C868BAF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A199C1909D0FCAF6C702B692 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D052D4DC1C88FCD10073737C /* Get Grub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Grub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D052D4DF1C88FCD10073737C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D052D4E11C88FCD10073737C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		D052D4FB1C88FCD10073737C /* Get GrubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Get GrubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D052D4FF1C88FCD10073737C /* Get_GrubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_GrubUITests.swift; sourceTree = "<group>"; };
 		D052D5011C88FCD10073737C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6227A80DC798CC7B713C69A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F750BD5FF4BF5D3B73484882 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B98B364E9730AFF8C597FEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A199C1909D0FCAF6C702B692 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57900E288EA9892DBCD34FB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C118DE1DC9C2893C868BAF /* Pods.debug.xcconfig */,
+				D6227A80DC798CC7B713C69A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D052D4D31C88FCD10073737C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				D052D4F31C88FCD10073737C /* Get GrubTests */,
 				D052D4FE1C88FCD10073737C /* Get GrubUITests */,
 				D052D4DD1C88FCD10073737C /* Products */,
+				57900E288EA9892DBCD34FB2 /* Pods */,
+				1B98B364E9730AFF8C597FEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D052D5041C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get Grub" */;
 			buildPhases = (
+				81F4CAE5E779C7AF1B253113 /* Check Pods Manifest.lock */,
 				D052D4D81C88FCD10073737C /* Sources */,
 				D052D4D91C88FCD10073737C /* Frameworks */,
 				D052D4DA1C88FCD10073737C /* Resources */,
+				936BCC3B2A4A6704D4B70A15 /* Embed Pods Frameworks */,
+				7831668CF658BBF0D034D9D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7831668CF658BBF0D034D9D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F4CAE5E779C7AF1B253113 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		936BCC3B2A4A6704D4B70A15 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D052D4D81C88FCD10073737C /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		D052D5051C88FCD10073737C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C118DE1DC9C2893C868BAF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Get Grub/Info.plist";
@@ -408,6 +484,7 @@
 		};
 		D052D5061C88FCD10073737C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6227A80DC798CC7B713C69A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Get Grub/Info.plist";
@@ -484,6 +561,7 @@
 				D052D5061C88FCD10073737C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D052D5071C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				D052D5091C88FCD10073737C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D052D50A1C88FCD10073737C /* Build configuration list for PBXNativeTarget "Get GrubUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				D052D50C1C88FCD10073737C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

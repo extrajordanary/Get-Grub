@@ -1,0 +1,6 @@
+framework module Pods_Get_GrubUITests {
+  umbrella header "Pods-Get GrubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

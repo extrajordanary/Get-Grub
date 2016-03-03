@@ -1,0 +1,6 @@
+framework module Pods_Get_Grub {
+  umbrella header "Pods-Get Grub-umbrella.h"
+
+  export *
+  module * { export * }
+}
