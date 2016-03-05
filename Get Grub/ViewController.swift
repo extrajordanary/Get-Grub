@@ -27,6 +27,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     var restaurantInfo = ["phone": "", "ratingimage": "", "address1": "","address2": "","status":"false","name":""]
     var tableView = UITableView()
     var array = ["hi", "hey", "hello"]
+    var dict = [NSObject : AnyObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
         searchField.delegate = self
@@ -42,11 +43,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
         foodImage.alpha = 0
         searchButton.layer.borderColor = UIColor.blackColor().CGColor
         searchButton.layer.borderWidth = 1.0
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.locationManager.requestAlwaysAuthorization()
         
-        // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
@@ -91,7 +90,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //datasource method returning no. of rows
         return array.count
     }
     
@@ -101,6 +99,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             client.searchPlacesWithParameters(["term": "\(nameParameter)","ll": "\(latitude),\(longitude)","limit":"3"], successSearch: { (data, response) -> Void in
                // print(NSString(data: data, encoding: NSUTF8StringEncoding))
                 let json = JSON(data: data)
+                
                 //self.createTableView()
                 //self.searchButton.hidden = true
 //                let name = json["businesses"][0]["name"].stringValue
