@@ -11,7 +11,7 @@ import Firebase
 import CoreLocation
 import Alamofire
 import SwiftyJSON
-class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var welcomeLabel : UILabel!
     @IBOutlet var infoLabel : UILabel!
@@ -24,12 +24,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     var longitude : Double!
     let apiConsoleInfo = YelpAPIConsole()
     let client = YelpAPIClient()
-    var array = [JSON]()
-
+    var restaurantInfo = ["phone": "", "ratingimage": "", "address1": "","address2": "","status":"false","name":""]
+    var tableView = UITableView()
+    var array = ["hi", "hey", "hello"]
     override func viewDidLoad() {
         super.viewDidLoad()
         searchField.delegate = self
-
+        tableView.dataSource = self
+        tableView.delegate   = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+        
         welcomeLabel.alpha = 0
         infoLabel.alpha = 0
         searchField.alpha = 0
@@ -51,6 +56,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
         }
         
         textFieldShouldReturn(searchField)
+        //textFieldDidBeginEditing(searchField)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -65,16 +71,49 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
         return true
     }
     
+    func createTableView() {
+        tableView.frame = CGRectMake(UIScreen.mainScreen().bounds.origin.x, searchField.frame.origin.y + searchField.frame.height , searchField.frame.width, (UIScreen.mainScreen().bounds.height / 2))
+        
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.view.addSubview(tableView)
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        tableView.removeFromSuperview()
+        self.searchButton.hidden = false
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //datasource method returning the what cell contains
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        cell.textLabel?.text = array[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //datasource method returning no. of rows
+        return array.count
+    }
+    
     @IBAction func searchFood(sender : AnyObject) {
         if (searchField.text != "") {
             nameParameter = searchField.text
             client.searchPlacesWithParameters(["term": "\(nameParameter)","ll": "\(latitude),\(longitude)","limit":"3"], successSearch: { (data, response) -> Void in
                // print(NSString(data: data, encoding: NSUTF8StringEncoding))
                 let json = JSON(data: data)
-                for (key,subJson):(String, JSON) in json {
-                    
-                }
-                
+                //self.createTableView()
+                //self.searchButton.hidden = true
+//                let name = json["businesses"][0]["name"].stringValue
+//                let phone = json["businesses"][0]["display_phone"].stringValue
+//                let openStatus = json["businesses"][0]["is_closed"].stringValue
+//                let address = json["businesses"][0]["display_address "][0].stringValue
+//                let address1 = json["businesses"][0]["display_address "][1].stringValue
+//                self.restaurantInfo.updateValue(name, forKey: "name")
+//                self.restaurantInfo.updateValue(phone, forKey: "phone")
+//                self.restaurantInfo.updateValue(openStatus, forKey: "status")
+//                self.restaurantInfo.updateValue(address, forKey: address)
+//                self.restaurantInfo.updateValue(address, forKey: address1)
+//                print(json["businesses"][0]["location"])
                 })
                 {
                     (error) -> Void in
