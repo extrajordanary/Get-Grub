@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Get Grub/Alamofire.framework"
   install_framework "Pods-Get Grub/Firebase.framework"
+  install_framework "Pods-Get Grub/OAuthSwift.framework"
+  install_framework "Pods-Get Grub/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Get Grub/Alamofire.framework"
   install_framework "Pods-Get Grub/Firebase.framework"
+  install_framework "Pods-Get Grub/OAuthSwift.framework"
+  install_framework "Pods-Get Grub/SwiftyJSON.framework"
 fi

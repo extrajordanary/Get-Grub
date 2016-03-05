@@ -4,9 +4,11 @@
 
 use_frameworks!
 pod 'Firebase', '>= 2.5.0'
+pod "OAuthSwift", "~> 0.5.0"
+pod 'Alamofire', '~> 3.0'
 
 target 'Get Grub' do
-
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
 
 target 'Get GrubTests' do

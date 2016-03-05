@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OAuthSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,30 +39,50 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A2F6E21B670DC565238510DE02DEA9F1</key>
+		<key>0037686E02A1CADE3B65FD27AFFE9C2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6D613A1707955DC18D21D3827AA2C87</key>
+		<key>053D239EEF3E6F84F72486C4F3649A77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38AF2C5A838F696A0549EC0C5A51B5A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>677E2189A13849DB400A9DA5897A05B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7DABACAB9B999430C8D9BED82B217E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC03A871635F0889AD3B650EC0B85A51</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C2DEE488C3BCE0FE10D79F6FEB5FBD06</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E8386141E3649A6565AFA0131C3C0522</key>
 		<dict>
 			<key>primary</key>
 			<true/>

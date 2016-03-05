@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Get_Grub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search a place to get grub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYE-56-rs7">
+                                <rect key="frame" x="173" y="234" width="255" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="M4c-V4-Gsn"/>
+                                    <constraint firstAttribute="height" constant="39" id="ksc-Sf-p9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-4H-4tP">
+                                <rect key="frame" x="20" y="28" width="560" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="PJi-QH-ct9"/>
+                                    <constraint firstAttribute="width" constant="560" id="wxU-5F-SNY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Chipotle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZv-sG-azj">
+                                <rect key="frame" x="20" y="281" width="560" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="25e-gN-M8S"/>
+                                    <constraint firstAttribute="width" constant="393" id="POM-4e-8SZ"/>
+                                    <constraint firstAttribute="width" constant="560" id="qij-LH-PiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="POM-4e-8SZ"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUT-D2-WkR">
+                                <rect key="frame" x="199" y="355" width="202" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1x8-so-i0i"/>
+                                    <constraint firstAttribute="width" constant="202" id="UTN-Mg-23H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W63-9u-ZOh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="U0x-ey-Jhz">
+                                <rect key="frame" x="227" y="84" width="147" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="oqq-oH-gww"/>
+                                    <constraint firstAttribute="height" constant="142" id="w8m-gY-0AI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jYE-56-rs7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2N2-3X-Vcd"/>
+                            <constraint firstItem="sZv-sG-azj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Qg-Ce-7ni"/>
+                            <constraint firstItem="sZv-sG-azj" firstAttribute="top" secondItem="jYE-56-rs7" secondAttribute="bottom" constant="8" id="4ZP-Xf-FEg"/>
+                            <constraint firstItem="jYE-56-rs7" firstAttribute="top" secondItem="bVb-4H-4tP" secondAttribute="bottom" constant="158" id="527-7S-Qna"/>
+                            <constraint firstItem="bVb-4H-4tP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8jv-wp-EJB"/>
+                            <constraint firstItem="U0x-ey-Jhz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ow-Cp-6Zd"/>
+                            <constraint firstItem="U0x-ey-Jhz" firstAttribute="top" secondItem="bVb-4H-4tP" secondAttribute="bottom" constant="8" id="DFR-Ux-w50"/>
+                            <constraint firstItem="jYE-56-rs7" firstAttribute="top" secondItem="U0x-ey-Jhz" secondAttribute="bottom" constant="8" id="Mj9-00-pX8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iUT-D2-WkR" secondAttribute="bottom" constant="211" id="OFx-yi-sPH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZv-sG-azj" secondAttribute="trailing" id="d1a-ls-SbW"/>
+                            <constraint firstItem="iUT-D2-WkR" firstAttribute="top" secondItem="sZv-sG-azj" secondAttribute="bottom" constant="36" id="dJa-Hz-adx"/>
+                            <constraint firstItem="iUT-D2-WkR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKC-0d-EMt"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sZv-sG-azj" secondAttribute="leading" id="ip6-V8-h5S"/>
+                            <constraint firstItem="bVb-4H-4tP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nTL-Rz-IV9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodImage" destination="U0x-ey-Jhz" id="gPx-4q-2Vg"/>
+                        <outlet property="infoLabel" destination="jYE-56-rs7" id="gRS-rx-5XX"/>
+                        <outlet property="searchButton" destination="iUT-D2-WkR" id="2aY-H2-TZi"/>
+                        <outlet property="searchField" destination="sZv-sG-azj" id="QWB-zC-6Ho"/>
+                        <outlet property="welcomeLabel" destination="bVb-4H-4tP" id="HCG-RE-8wB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png" width="512" height="512"/>
+    </resources>
 </document>
