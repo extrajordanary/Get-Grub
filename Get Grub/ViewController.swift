@@ -24,8 +24,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     var longitude : Double!
     let apiConsoleInfo = YelpAPIConsole()
     let client = YelpAPIClient()
-    var array = [String]()
-    
+    var array = [JSON]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         searchField.delegate = self
@@ -71,7 +71,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             client.searchPlacesWithParameters(["term": "\(nameParameter)","ll": "\(latitude),\(longitude)","limit":"3"], successSearch: { (data, response) -> Void in
                // print(NSString(data: data, encoding: NSUTF8StringEncoding))
                 let json = JSON(data: data)
-               print(json["businesses"][0]["display_phone"].stringValue)
+                for (key,subJson):(String, JSON) in json {
+                    
+                }
                 
                 })
                 {
