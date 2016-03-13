@@ -9,6 +9,7 @@
 import Foundation
 import OAuthSwift
 
+// TODO: why does this need to be a struct? if the init is the only place they are used, you can just move these to be `let`s in the class below
 struct YelpAPIConsole {
     var consumerKey = "-juUeNMM-9BHuamEp7Is7g"
     var consumerSecret = "zFbfCqoFPBx_psI1s4cm3ah8WHM"
@@ -16,6 +17,8 @@ struct YelpAPIConsole {
     var accessTokenSecret = "-qI4tsWdod-yHPFWCG-CAZ266t4"
 }
 
+
+// TODO: overall fine so far, I see it’s a work in progress. my main suggestion would be to be sure you keep this as the most simple API wrapper possible - methods only for calling the API that return the raw response (which you are already doing).
 class YelpAPIClient: NSObject {
     
     let APIBaseUrl = "https://api.yelp.com/v2/"
@@ -24,7 +27,9 @@ class YelpAPIClient: NSObject {
 
     override init() {
         apiConsoleInfo = YelpAPIConsole()
+
         self.clientOAuth = OAuthSwiftClient(consumerKey: apiConsoleInfo.consumerKey, consumerSecret: apiConsoleInfo.consumerSecret, accessToken: apiConsoleInfo.accessToken, accessTokenSecret: apiConsoleInfo.accessTokenSecret)
+
         super.init()
     }
     
@@ -53,6 +58,7 @@ class YelpAPIClient: NSObject {
     
     func searchPlacesWithParameters(searchParameters: Dictionary<String, String>, successSearch: (data: NSData, response: NSHTTPURLResponse) -> Void, failureSearch: (error: NSError) -> Void) {
         let searchUrl = APIBaseUrl + "search/"
+
         clientOAuth!.get(searchUrl, parameters: searchParameters, success: successSearch, failure: failureSearch)
     }
     
@@ -79,10 +85,14 @@ class YelpAPIClient: NSObject {
     
     func getBusinessInformationOf(businessId: String, localeParameters: Dictionary<String, String>? = nil, successSearch: (data: NSData, response: NSHTTPURLResponse) -> Void, failureSearch: (error: NSError) -> Void) {
         let businessInformationUrl = APIBaseUrl + "business/" + businessId
+
+        // TODO: ternary here as well
         var parameters = localeParameters
         if parameters == nil {
             parameters = Dictionary<String, String>()
         }
+
+        // TODO: add more spacing to improve readability, newlines between chunks of code doing diff things
         clientOAuth!.get(businessInformationUrl, parameters: parameters!, success: successSearch, failure: failureSearch)
     }
     
@@ -109,6 +119,9 @@ class YelpAPIClient: NSObject {
     
     func searchBusinessWithPhone(phoneNumber: String, searchParameters: Dictionary<String, String>? = nil, successSearch: (data: NSData, response: NSHTTPURLResponse) -> Void, failureSearch: (error: NSError) -> Void) {
         let phoneSearchUrl = APIBaseUrl + "phone_search/"
+
+        // TODO: can use a ternary here instead
+        // parameters = searchParameters ? searchParameters : Dictionary<String, String>()
         var parameters = searchParameters
         if parameters == nil {
             parameters = Dictionary<String, String>()
